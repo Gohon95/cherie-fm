@@ -14,7 +14,7 @@ function App() {
     </Navbar>
   <Row className="justify-content-center">
     <Col xs lg="2">
-    <iframe class="align-items-center col-12 mt-5 video" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+    <iframe class="align-items-center col-12 mt-5 video" src="https://www.youtube.com/embed/ksppH64LQ60" allowfullscreen></iframe>
     </Col>
   </Row>
   <Row className="justify-content-center">
@@ -22,12 +22,18 @@ function App() {
   </Row>
   <Row className="justify-content-center">
     <Col xs lg="2">
-    <iframe class="align-items-center col-6 video-card" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+    <iframe class="align-items-center col-6 video-card" src="https://www.youtube.com/embed/ksppH64LQ60" allowfullscreen></iframe>
     </Col>
     <Col xs="4" lg="2">
-    <iframe class="align-items-center col-6 video-card" src="https://www.youtube.com/watch?v=J8uyhOvGAgo" allowfullscreen></iframe>
+    <iframe class="align-items-center col-6 video-card" src="https://www.youtube.com/embed/ksppH64LQ60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
     </Col>
-    <Button xs lg="2" variant="warning">Voir plus</Button>
+    <Row className="justify-content-center">
+  <img src="/images/image3.png"/>
+  </Row>
+  <Row className="justify-content-center">
+  <img src="/images/image4.png"/>
+  </Row>
+    <Button xs lg="2" variant="warning">Ajouter</Button>
   </Row>
 </Container>
   );
