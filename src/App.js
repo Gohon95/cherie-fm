@@ -27,9 +27,6 @@ function App() {
         </Nav>
         <Nav>
           <Nav.Link href="#deets">Grille des émissions</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            Dank memes
-          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <img class="logo" src="/images/logo.png"/>
