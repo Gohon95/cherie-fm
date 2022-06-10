@@ -5,29 +5,25 @@ import './App.css';
 
 function App() {
   return (
-    <Container>
+   
+    <Container fluid className='p-0'>
       <Navbar collapseOnSelect expand="lg" bg="warning" variant="dark">
         <Container class="profile">
-        <Navbar.Brand href="#home">
-      
-       
-      </Navbar.Brand>
+        
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#features">Radio</Nav.Link>
           <Nav.Link href="#pricing">Blog</Nav.Link>
-          <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">WebRadio</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
+            <Nav.Link href="#action/3.1">WebRadio</Nav.Link>
+            <Nav.Link href="#action/3.2">
               Podcast
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Rediffusion</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
+            </Nav.Link>
+            <Nav.Link href="#action/3.3">Rediffusion</Nav.Link>
+            <Nav.Link />
+            <Nav.Link href="#action/3.4">
               Playlist
-            </NavDropdown.Item>
-          </NavDropdown>
+            </Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link href="#deets">Grille des émissions</Nav.Link>
@@ -36,12 +32,12 @@ function App() {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-   
       <img class="logo" src="/images/logo.png"/>
         <img  src="/images/profile.png"/>
         </Container>
     </Navbar>
-      
+
+
   <Row className="justify-content-center">
     <Col xs lg="2">
     <iframe class="align-items-center col-12 mt-5 video" src="https://www.youtube.com/embed/ksppH64LQ60" allowfullscreen></iframe>

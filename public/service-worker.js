@@ -6,22 +6,22 @@ self.addEventListener('fetch', function(event) {
     );
   });
 
- /* if (response) {
-      return response;
-  }
+  let defferedPrompt;
+const addbtn = document.querySelector('.btn');
 
-  var  fetchRequest = event.request.clone();
+window.addEventListener('beforeinstallprompt', event => {
+    event.preventDefault();
+    defferedPrompt = event
+    addbtn.style.display = 'block';
+});
 
-  return fetch(fetchrequest).then(function (response) {
-      if (!response || response.status == 200 || response.type == "basic") {
-          return response;
-      }
+addbtn.addEventListener('click', event => {
+    defferedPrompt.prompt();
 
-      var responseToCache = response.clone();
-
-      caches.open(CACHE.NAME).then(function (cache) {
-          cache.put(event.request, responseToCache);
-
-          return response;
-      })
-  }) */
+    defferedPrompt.userChoice.then(choice => {
+        if(choice.outcome === 'accepted'){
+            console.log('user accepted the prompt')
+        }
+        defferedPrompt = null;
+    })
+})
